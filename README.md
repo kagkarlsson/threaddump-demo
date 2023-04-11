@@ -9,9 +9,9 @@
    curl http://localhost:8080/fakework/database_read
    ```
 3. Take the thread-dump, for example using `jcmd` (`| less` makes it easier to browse/search).
-```shell
-jcmd no.bekk.threaddumpdemo.ThreaddumpDemoApplication Thread.print | less
-```
+   ```shell
+   jcmd no.bekk.threaddumpdemo.ThreaddumpDemoApplication Thread.print | less
+   ```
 
 ## Alternative ways to get a thread-dump
 
