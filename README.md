@@ -1,5 +1,7 @@
 # Thread-dump demo application
 
+## Exercise
+
 1. Start the `ThreaddumpDempApplication` using your IDE or mvn
     ```shell
     mvn spring-boot:run
@@ -12,6 +14,9 @@
    ```shell
    jcmd no.bekk.threaddumpdemo.ThreaddumpDemoApplication Thread.print | less
    ```
+
+4. Find and inspect the relevant thread to see what the stack looks like for that particular scenario.
+    **Hint:** search for packages specific for this app, e.g. `no.bekk.threaddumpdemo`
 
 ## Alternative ways to get a thread-dump
 
