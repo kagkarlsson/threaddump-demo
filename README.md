@@ -31,7 +31,7 @@ jcmd <pid> Thread.print
 jcmd <class-name> Thread.print
 
 # If no JDK, SIGQUIT dumps threads to System.out
-kill -QUIT 
+kill -QUIT <pid>
 
 # For a Kubernetes pod (Java pid is typically 1)
 kubectl exec <pod-name> -- jstack 1
