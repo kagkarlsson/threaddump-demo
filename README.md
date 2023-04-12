@@ -1,5 +1,8 @@
 # Thread-dump demo application
 
+This is an example Spring web-app which can simulate different types of slow requests. It is intended
+to be used for experimenting with threaddumps.
+
 ## Exercise
 
 1. Start the `ThreaddumpDempApplication` using your IDE or mvn
@@ -10,7 +13,7 @@
    ```shell
    curl http://localhost:8080/fakework/database_read
    ```
-3. Take the thread-dump, for example using `jcmd` (`| less` makes it easier to browse/search).
+3. Take the thread-dump, for example using `jcmd` (`| less` makes it easier to browse/search). You have 20s.
    ```shell
    jcmd no.bekk.threaddumpdemo.ThreaddumpDemoApplication Thread.print | less
    ```
